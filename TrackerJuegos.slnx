@@ -1,0 +1,6 @@
+<Solution>
+  <Project Path="TrackerJuegos.Application/TrackerJuegos.Application.csproj" />
+  <Project Path="TrackerJuegos.Domain/TrackerJuegos.Domain.csproj" />
+  <Project Path="TrackerJuegos.Infrastructure/TrackerJuegos.Infrastructure.csproj" />
+  <Project Path="TrackerJuegos.WebApi/TrackerJuegos.WebApi.csproj" />
+</Solution>

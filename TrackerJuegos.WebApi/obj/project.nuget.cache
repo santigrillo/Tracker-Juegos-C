@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "4r/PpKhl8zE=",
+  "success": true,
+  "projectFilePath": "/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.WebApi/TrackerJuegos.WebApi.csproj",
+  "expectedPackageFiles": [
+    "/home/santiagogrillo/.nuget/packages/microsoft.aspnetcore.openapi/10.0.8/microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
