@@ -23,6 +23,9 @@
 * Infraestructura referencia a Aplicación  
 `dotnet add TrackerJuegos.Infrastructure/TrackerJuegos.Infrastructure.csproj reference TrackerJuegos.Application/TrackerJuegos.Application.csproj`
 
+* Infraestructura referencia a Dominio
+`dotnet add TrackerJuegos.Infrastructure/TrackerJuegos.Infrastructure.csproj reference TrackerJuegos.Domain/TrackerJuegos.Domain.csproj`
+
 * WebApi referencia a Infraestructura y Aplicación  
 `dotnet add TrackerJuegos.WebApi/TrackerJuegos.WebApi.csproj reference TrackerJuegos.Infrastructure/TrackerJuegos.Infrastructure.csproj`
 `dotnet add TrackerJuegos.WebApi/TrackerJuegos.WebApi.csproj reference TrackerJuegos.Application/TrackerJuegos.Application.csproj`
@@ -32,7 +35,20 @@ Con el comando `dotnet add ... reference ... ` le decimos al compilador: "Permit
 Es decir:
 * Aplicación -> Dominio: Le decimos a la Aplicación que mire al Dominio, la Aplicación necesita conocer la clase `Game` para poder crear casos de uso (ej, "Guardar Juego"). Pero el Dominio no tiene referencia a la Aplicación.
 * Infraestructura -> Aplicación: La infraestructura mira a la aplicación, porque en la capa de Aplicación/Dominio definimos la interfaz de `IGameRepository`. La infraestructura necesita ver esa interfaz para poder decir: "Ah, yo (SQLite) voy a cumplir con este contrato".
+* Infraestructura -> Dominio: La infraestructura mira al Dominio porque es la encargada de guardar o recuperar datos. Aunque la base de datos SQLite y las peticiones de red (APIs) son detalles externos, necesitan saber qué es lo que están manejando. Para  configurar la base de datos con Entity Framework (ApplicatiónDbContext), la infraestructura necesita ver las entidades puras como TrackingRecord para poder decirle al motor SQL: "Toma las propiedades de esta clase y mapea sus columnas". Ademas, cuando el repositorio consulte la base de datos o la API, debe construir y volver un objeto puro del Dominio.
 * WebAPI -> Infraestructura/Aplicación -> La WebAPI (controladores, etc) es la capa externa. Necesita ver la aplicación para poder llamar a los casos de uso cuando llega una petición HTTP. Y necesita ver la Infraestructura solo en el momento del arranque (Program.cs) para poder "conectar" los cables y decirle al sistema: "Cuando alguien pida un `IGameRepository` entregale la base de datos SQLite".
+
+### ¿Por qué esto es Clean Architecture puro?
+
+Al principio, puede parecer contraintuitivo que la Infraestructura se salte la capa de Aplicación y mire directamente al Dominio. Sin embargo, si revisas el diagrama clásico de círculos concéntricos de Clean Architecture (creado por Robert C. Martin), la regla principal dice: "El código fuente de las capas exteriores puede depender del código fuente de las capas interiores".
+
+    El Dominio es el centro (Círculo 0).
+
+    La Aplicación es el anillo interno (Círculo 1).
+
+    La Infraestructura es el anillo externo (Círculo 2).
+
+Por lo tanto, que el Círculo 2 mire al Círculo 0 es un movimiento válido "hacia adentro". Lo que está estrictamente prohibido es que el Círculo 0 mire al Círculo 2 (que tus entidades puras dependan de Entity Framework).
 
 #### ¿Por qué esto evita el efecto "Zig-Zag" o dependencia circular?
 1. Imaginar el caso, tenemos un caso de uso que guarda un juego en la base de datos (Aplicación llama a Infraestructura).

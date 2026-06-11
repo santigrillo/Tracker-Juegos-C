@@ -698,7 +698,11 @@
         "frameworks": {
           "net10.0": {
             "targetAlias": "net10.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Domain/TrackerJuegos.Domain.csproj": {
+                "projectPath": "/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Domain/TrackerJuegos.Domain.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -716,6 +720,18 @@
       "frameworks": {
         "net10.0": {
           "targetAlias": "net10.0",
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[10.0.9, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[10.0.9, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

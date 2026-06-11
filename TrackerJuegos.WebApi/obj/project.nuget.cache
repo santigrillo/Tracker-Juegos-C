@@ -1,11 +1,23 @@
 {
   "version": 2,
-  "dgSpecHash": "4r/PpKhl8zE=",
+  "dgSpecHash": "0HcS0dibUOY=",
   "success": true,
   "projectFilePath": "/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.WebApi/TrackerJuegos.WebApi.csproj",
   "expectedPackageFiles": [
     "/home/santiagogrillo/.nuget/packages/microsoft.aspnetcore.openapi/10.0.8/microsoft.aspnetcore.openapi.10.0.8.nupkg.sha512",
-    "/home/santiagogrillo/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
+    "/home/santiagogrillo/.nuget/packages/microsoft.data.sqlite.core/10.0.9/microsoft.data.sqlite.core.10.0.9.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/microsoft.entityframeworkcore/10.0.9/microsoft.entityframeworkcore.10.0.9.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/microsoft.entityframeworkcore.abstractions/10.0.9/microsoft.entityframeworkcore.abstractions.10.0.9.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/microsoft.entityframeworkcore.analyzers/10.0.9/microsoft.entityframeworkcore.analyzers.10.0.9.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/microsoft.entityframeworkcore.relational/10.0.9/microsoft.entityframeworkcore.relational.10.0.9.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/microsoft.entityframeworkcore.sqlite/10.0.9/microsoft.entityframeworkcore.sqlite.10.0.9.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/microsoft.entityframeworkcore.sqlite.core/10.0.9/microsoft.entityframeworkcore.sqlite.core.10.0.9.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/microsoft.extensions.dependencymodel/10.0.9/microsoft.extensions.dependencymodel.10.0.9.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/sqlitepclraw.bundle_e_sqlite3/2.1.11/sqlitepclraw.bundle_e_sqlite3.2.1.11.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/sqlitepclraw.core/2.1.11/sqlitepclraw.core.2.1.11.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/sqlitepclraw.lib.e_sqlite3/2.1.11/sqlitepclraw.lib.e_sqlite3.2.1.11.nupkg.sha512",
+    "/home/santiagogrillo/.nuget/packages/sqlitepclraw.provider.e_sqlite3/2.1.11/sqlitepclraw.provider.e_sqlite3.2.1.11.nupkg.sha512"
   ],
   "logs": []
 }

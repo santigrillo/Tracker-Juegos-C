@@ -1,0 +1,16 @@
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/bin/Debug/net10.0/TrackerJuegos.Application.deps.json
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/bin/Debug/net10.0/TrackerJuegos.Application.dll
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/bin/Debug/net10.0/TrackerJuegos.Application.pdb
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/bin/Debug/net10.0/TrackerJuegos.Domain.dll
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/bin/Debug/net10.0/TrackerJuegos.Domain.pdb
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/TrackerJuegos.Application.csproj.AssemblyReference.cache
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/TrackerJuegos.Application.GeneratedMSBuildEditorConfig.editorconfig
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/TrackerJuegos.Application.AssemblyInfoInputs.cache
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/TrackerJuegos.Application.AssemblyInfo.cs
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/TrackerJuegos.Application.csproj.CoreCompileInputs.cache
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/TrackerJuegos.Application.sourcelink.json
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/TrackerJ.F9F48CB7.Up2Date
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/TrackerJuegos.Application.dll
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/refint/TrackerJuegos.Application.dll
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/TrackerJuegos.Application.pdb
+/home/santiagogrillo/Escritorio/Integrador-Back-II/TrackerJuegos.Application/obj/Debug/net10.0/ref/TrackerJuegos.Application.dll
